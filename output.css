@@ -1181,6 +1181,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
