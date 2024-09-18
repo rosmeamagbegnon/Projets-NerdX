@@ -7,23 +7,16 @@
 </head>
 <body>
   <script>
-    // Sélectionner l'image et la nav bar
-    const image = document.getElementById('navToggle');
+    // Sélectionner le bouton et la nav bar
+    const button = document.getElementById('navToggle');
     const navbar = document.getElementById('navbar');
 
-    // Ajouter un écouteur d'événement au clic sur l'image
-    image.addEventListener('click', () => {
-        // Basculer la visibilité de la nav bar
-        // Afficher ou cacher la nav bar en fonction de son état actuel
-    if (navbar.classList.contains('none')) {
-        navbar.classList.remove('none');
-        navbar.style.display = 'inline'; // Pour les anciens navigateurs
-    } else {
-        navbar.classList.add('none');
-        navbar.style.display = 'none'; // Pour les anciens navigateurs
-    }
+    // Ajouter un écouteur d'événements sur le clic du bouton
+    button.addEventListener('click', () => {
+        // Afficher ou masquer la nav bar en horizontal
+        navbar.classList.toggle('hidden');
     });
-  </script>
+</script>
   <header class="bg-blue-950 ">
     <nav id="navbar" class="flex flex-wrap justify-between">
       <div class="mt-2 ml-7 text-white font-bold sm:text-lg md:mt-5 md:text-xl md:ml-10  lg:text-2xl  xl:ml-40">Brainwave.io</div>
