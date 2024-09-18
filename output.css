@@ -705,8 +705,12 @@ video {
   margin-top: 2rem;
 }
 
-.block {
-  display: block;
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
 .inline {
@@ -1080,10 +1084,6 @@ video {
 
   .sm\:mr-0 {
     margin-right: 0px;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:h-1\/2 {
