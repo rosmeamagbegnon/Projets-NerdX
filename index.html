@@ -14,7 +14,14 @@
     // Ajouter un écouteur d'événement au clic sur l'image
     image.addEventListener('click', () => {
         // Basculer la visibilité de la nav bar
-        navbar.classList.toggle('flex');
+        // Afficher ou cacher la nav bar en fonction de son état actuel
+    if (navbar.classList.contains('hidden')) {
+        navbar.classList.remove('hidden');
+        navbar.style.display = 'inline'; // Pour les anciens navigateurs
+    } else {
+        navbar.classList.add('hidden');
+        navbar.style.display = 'hidden'; // Pour les anciens navigateurs
+    }
     });
   </script>
   <header class="bg-blue-950 ">
@@ -27,9 +34,9 @@
         <li class="text-gray-400 sm:ml-1 md:ml-5 lg:ml-10 "><a href="#">Contact</a></li>
         <li class="sm:ml-1 md:ml-5 lg:ml-10 "><button class=" p-1 rounded bg-blue-700 "> <a class="text-white m-4 sm:h-1/4" href="#">Start a free trial</a></button></li>
       </ul>
-      <button class="md:hidden cursor-pointer">
+      <div class="md:hidden cursor-pointer">
         <img id="navToggle" class="h-2/3" src="assets/icons8-menu (1).svg" alt="icon">
-      </button>
+      </div>
     </nav>
     <section class="text-center lg:text-start flex flex-wrap sm:justify-center lg:justify-between mx-0 sm:py-2 md:py-32  lg:mx-10 lg:py-44 xl:mx-40 ">
       <div class="grid sm:pt-1 md:pt-7 lg:pt-10">

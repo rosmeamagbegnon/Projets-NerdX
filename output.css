@@ -705,6 +705,14 @@ video {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
