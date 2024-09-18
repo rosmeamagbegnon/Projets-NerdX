@@ -15,12 +15,12 @@
     image.addEventListener('click', () => {
         // Basculer la visibilité de la nav bar
         // Afficher ou cacher la nav bar en fonction de son état actuel
-    if (navbar.classList.contains('hidden')) {
-        navbar.classList.remove('hidden');
+    if (navbar.classList.contains('none')) {
+        navbar.classList.remove('none');
         navbar.style.display = 'inline'; // Pour les anciens navigateurs
     } else {
-        navbar.classList.add('hidden');
-        navbar.style.display = 'hidden'; // Pour les anciens navigateurs
+        navbar.classList.add('none');
+        navbar.style.display = 'none'; // Pour les anciens navigateurs
     }
     });
   </script>
