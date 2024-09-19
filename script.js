@@ -9,7 +9,7 @@ function toggleNav(){
   toggledMenu.classList.toggle("-translate-y-full")
 
   if(toggledMenu.classList.contains("-translate-y-full")) {
-    toggleMenuImg.setAttribute("src", "menu.svg")
+    toggleMenuImg.setAttribute("src", "assets/icons8-menu (1).svg")
     toggleMenuBtn.setAttribute("aria-expanded", "false")
   } 
   else {
