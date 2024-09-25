@@ -1036,6 +1036,11 @@ video {
   row-gap: 6rem;
 }
 
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
