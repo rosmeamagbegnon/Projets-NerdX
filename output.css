@@ -1044,6 +1044,11 @@ video {
   row-gap: 6rem;
 }
 
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1702,6 +1707,11 @@ video {
 
   .md\:gap-16 {
     gap: 4rem;
+  }
+
+  .md\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 
   .md\:py-32 {
