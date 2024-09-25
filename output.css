@@ -1639,6 +1639,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1758,6 +1762,10 @@ video {
 
   .lg\:mr-10 {
     margin-right: 2.5rem;
+  }
+
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .lg\:h-4\/5 {
